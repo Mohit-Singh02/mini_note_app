@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Note App</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        margin-top:20px;
+        color: black;
+        font-weight: bold;
+        font-size: 2.5em;
+    }
+    body{
+        background-color: #f0f0f0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding:20px;
+        
+
+
+    }
+    input[type="text"]{
+        width: 300px;
+        padding:12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2em;
+        margin-right: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease-in-out;
+
+    }
+    button{
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    font-family: 'Courier New', Courier, monospace;
+    }
+    button:hover{
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+  h2{
+    font-size: 1.5em;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    margin-top: 10px;
+   
+    
+  }
+  p{
+    font-size: 1.2em;
+    color: #555;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+</style>
+
+ <body>
+    <h1>Note App</h1>
+    <form id="noteForm">
+        <input type="text" id="noteInput" placeholder="Enter your note here..." required>
+        <button type="submit">Add Note</button>
+    </form>
+    <div id="notesContainer"></div>
+    <div class="note">
+        <h2>Note 1</h2>
+        <p>This is the first note.</p>
+        <button>Delete</button>
+    </div>
+</body>
+</html>
+
